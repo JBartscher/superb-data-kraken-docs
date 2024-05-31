@@ -59,19 +59,19 @@ can then grant permission or deny it. An administrator (or owner) can also direc
   <figcaption>CRUD Authorization</figcaption>
 </figure>
 
-## Metadata
+## Metadatamanager
 
 
 Handles opensearch-structure (roles, rolesmappings, tenants...) and provides endpoints for indexing and handling application-indizes.
 
-When creating an organization, metadata-Service will provide a tenant, as well as dedicated roles and rolesmappings for organization-level roles.
+When creating an organization, metadata-service will provide a tenant, as well as dedicated roles and rolesmappings for organization-level roles.
 
 <figure markdown>
   ![CRUD organization](../assets/components/metadata/metadata-organization-context.svg)
   <figcaption>CRUD organization</figcaption>
 </figure>
 
-When creating a space, metadata-Service will provide a tenant, as well as dedicated roles and rolesmappings for space-level roles and an
+When creating a space, metadata-service will provide a tenant, as well as dedicated roles and rolesmappings for space-level roles and an
 index `<orga>_<space>_measurements` (including an alias `measurements`).
 
 <figure markdown>
